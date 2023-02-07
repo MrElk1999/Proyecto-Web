@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<title>Proyecto-Informatica</title>
+	<link rel="stylesheet" href="css/style-ataque.css">
+
+    <script>
+        var imagenes = new Array(
+            ['img/pishing1.jpg'],
+            ['img/pishing2.jpg'],
+            ['img/pishing3.jpg'],
+            ['img/pishing4.jpg'],
+        );
+        var contador = 0;
+
+        function rotarImagenes() {
+            contador++
+            document.getElementById("imagen").src = imagenes[contador % imagenes.length][0];
+        }
+
+        onload = function () {
+            rotarImagenes();
+            setInterval(rotarImagenes, 1000);
+        }
+
+        function cambiarPestania(enlaceSeleccionado) {
+            var enlaces = document.querySelectorAll("#titulos a");
+            for (let i = 0; i < enlaces.length; i++) {
+                enlaces[i].style.border = '';
+            }
+
+            var pe = document.getElementById("parrafo");
+            var dive = document.getElementById("imagen1");
+
+            var id = enlaceSeleccionado.getAttribute("id");
+            enlaceSeleccionado.style.border = "1px solid black";
+            enlaceSeleccionado.style.color = "white";
+
+            let imge = document.getElementById('imagen1');
+            let parrafo = document.getElementById('parrafo');
+
+            switch (id) {
+                case "uno":
+
+                    parrafo = "Un troyano de puerta trasera crea una vulnerabilidad de puerta trasera en el sistema de la víctima, lo que permite al atacante obtener un control remoto y casi total. Usado con frecuencia para vincular las computadoras de un grupo de víctimas a una botnet o red zombi, los atacantes pueden usar el troyano para otros delitos cibernéticos.";
+                    imge.src = "img/tipo1.gif";
+                    break;
+                case "dos":
+
+                    parrafo = "Los ataques XSS insertan código malicioso en un sitio web legítimo o en un script de aplicación para obtener información del usuario, a menudo utilizando recursos web de terceros. Los atacantes utilizan con frecuencia JavaScript para ataques XSS, pero también se pueden utilizar Microsoft VCScript, ActiveX y Adobe Flash.";
+                    imge.src = "img/tipo2.gif";
+                    break;
+                case "tres":
+               
+                    parrafo = "Los ataques DoS y de denegación de servicio distribuida (DDoS) inundan los recursos de un sistema, los abruman e impiden las respuestas a las solicitudes de servicio, lo que reduce la capacidad del sistema para funcionar. A menudo, este ataque es una preparación para otro ataque.";
+                    imge.src = "img/tipo3.gif";
+                    break;
+
+                case "cuatro":
+              
+                    parrafo = "Los ciberdelincuentes utilizan el túnel de DNS, un protocolo transaccional, para intercambiar datos de aplicaciones, como extraer datos de forma silenciosa o establecer un canal de comunicación con un servidor desconocido, como un intercambio de comando y control (C&C).";
+                    imge.src = "img/tipo4.gif";
+                    break;
+
+                case "cinco":
+
+                    parrafo = "El malware es software malintencionado que puede inutilizar los sistemas infectados. La mayoría de las variantes de malware destruyen datos al eliminar o limpiar archivos críticos para la capacidad de ejecución del sistema operativo.";
+                    imge.src = "img/tipo5.gif";
+                    break;
+            }
+            pe.innerHTML = parrafo;
+            dive.innerHTML = imge;
+        }
+
+    </script>
+</head>
+
+
+    <header>
+        <div class="logo">
+            <a  href="./index.html"><img src="../Proyecto web Final/img/logo.png" alt="logo"></a>
+            <h2 class="hacker">Ataques Cyberneticos</h2>
+        </div>
+            <nav>
+                <ul>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./AtaquesCyberneticos.html">¿Que son los Ataques Cyberneticos?</a>
+                    <a href="./TipoHackers.html">¿Que Tipo de Hackers Existen?</a>
+                    <a href="./PrevenirAtaque.html">¿Como Prevenir Ataques?</a>
+                </ul>
+            </nav>
+    </header>
+
+    
+    <body>
+
+        <div id="Contenedor-Pa-Vi">
+            <div class="artic1">
+
+                <h4><strong>¿Que son los ataques Cyberneticos?</strong></h4>
+                <br>
+
+                <p>Un ataque cibernético es una acción delictiva y malintencionada que se realiza para acceder a información privada,bien para apropiarse de ella o bien para inutilizarla y pedir dinero a cambio de liberarla.</p>
+                <p>Detrás de estos ataques cibernéticos están delincuentes informáticos, hackers, organizaciones criminales, etc, cuyo objetivo es apropiarse de la información o extorsionar a la empresa o persona atacada.</p>
+                <p>Las bacterias o gérmenes que se quedan en las superficies se deben exterminar lo más rápido posible 
+                    para evitar su propagación y que no pongan en riesgo al personal.</p>
+                <p>Cualquier empresa que almacene, manipule o transmita datos se encuentra expuesta a un ciberataque.</p>
+                <p>España recibe más de 4.000 ciberataques al día, según publicaba recientemente la Vanguardia y somos  el tercer país del mundo con mayor número de ataques cibernéticos  después de Estados Unidos y Reino Unido, según publicaba el país. </p>
+            </div>
+
+            <div class="artic1">
+                <img src="img/.jpg" alt="" id="imagen" height="300" width="390" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+        <div id="titulos">
+            <a class="tit" id="uno" onmouseover="cambiarPestania(this)" href="#titulos">Troyano de puerta trasera</a>
+            <a class="tit" id="dos" onmouseover="cambiarPestania(this)" href="#titulos">Ataque de secuencias de comandos entre sitios (XSS)</a>
+            <a class="tit" id="tres" onmouseover="cambiarPestania(this)" href="#titulos">Denegación de servicio (DoS)</a>
+            <a class="tit" id="cuatro" onmouseover="cambiarPestania(this)" href="#titulos">Tunelización de DNS</a>
+            <a class="tit" id="cinco" onmouseover="cambiarPestania(this)" href="#titulos">Malware</a>
+        </div>
+        <div id="contenido">
+            <p id="parrafo"> A continuación detallamos los tipos más comunes de limpieza industrial.</p><br>
+            <img id="imagen1" src="img/limpiezageneral.jpg" alt="">
+        </div>
+
+        <hr>
+
+        <div class="artic2">
+            <article id="at1">
+                <h3><strong>Todo lo que necesitas saber de los Ataques Cyberneticos</strong></h3>
+                <br>
+            
+            </article>
+        </div>
+
+
+        <aside id="Aside1">
+            <div class="artic3">
+                <blockquote>
+                    <h5>Ataques Cyberneticos</h5>
+                    <iframe src="https://www.youtube.com/embed/8Yp02B0sMj4" height="350" width="450"
+                        allowfullscreen></iframe>
+                </blockquote>
+            </div>
+
+            <div class="artic3">
+                <blockquote>
+                    <h5>Los ataques mas grande de la historia</h5>
+                    <iframe src="https://www.youtube.com/embed/RExgLfFzgrw"height="350" width="450"
+                        allowfullscreen></iframe>
+                </blockquote>
+            </div>
+        </aside>
+    </div>
+        
+
+    </body>
+        <footer class="footer-distribucion">
+        <div class="footer-izquierda">
+          <h3>Elaborado por:</h3> 
+          <h2>Pianda Vargas</h2>
+          <h2>Marcillo Belén</h2>
+          <h2>Desiderio Emily</h2>
+          
+            <p class="footer-enlaces"> 
+            <a href="">Facebook</a>
+            <a href="">Youtube</a>
+            <a href="">Blogs</a>
+            <a href="">Twiter</a>
+        </p>
+        <p class="footer-nombre"><strong>Copyright© 2022 3ro Informática "D"<br>Todos los Derechos Reservados</strong></p>
+        </div>
+            
+            <div class="footer-centro">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Ecuador-Guayas</span>
+                        Guayaquil</p>
+                </div>
+    
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+593 80069565</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">Desiderio_Emily123@gmail.com</a></p>
+                    
+                </div>
+            </div>
+
+            <div class="footer-derecha">
+                <p class="footer-nombre-informacion">
+                    <h3>Informacion de Nuestra Pagina Web</h3>
+                    Nosotros Desarollamos esta Pagina informativa para los docentes de la Unidad Dolores Sucre Con la finalidad de mostrar
+                    los ataques Cyberneticos que existen como los niveles y como prevenir con los niveles se seguridad que existen.
+                </p>
+
+                <div class="footer-iconos">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>   
+         </footer>
+</html>

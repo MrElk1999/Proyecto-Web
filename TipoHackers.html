@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<title>Proyecto-Informatica</title>
+	<link rel="stylesheet" href="css/style-tiposhacker.css">
+</head>
+
+
+    <header>
+        <div class="logo">
+            <a  href="./index.html"><img src="../Proyecto web Final/img/logo.png" alt="logo"></a>
+            <h2 class="hacker">Ataques Cyberneticos</h2>
+        </div>
+            <nav>
+                <ul>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./AtaquesCyberneticos.html">¿Que son los Ataques Cyberneticos?</a>
+                    <a href="./TipoHackers.html">¿Que Tipo de Hackers Existen?</a>
+                    <a href="./PrevenirAtaque.html">¿Como Prevenir Ataques?</a>
+                </ul>
+            </nav>
+    </header>
+
+    <body>
+        <!-- Imagenes Galeria -->
+    <h2 class="titulo">Galeria de Hackers más buscados de la historia</h2>
+
+    <section class="imagenes">
+        <div class="img img-1" onclick="myFunction();">
+            <a class="link">La banda REvil</a>
+        </div>
+        <div class="img img-2">
+            <a class="link" href="">Evgeniy Mikhailovich Bogachev</a>
+        </div>
+        <div class="img img-3">
+            <a class="link" href="">Bureau 121</a>
+        </div>
+        <div class="img img-4">
+            <a class="link" href="">Fancy Bear</a>
+        </div>
+    </section>
+
+    <!-- Expandir img -->
+    <div class="contenedor">
+        <!-- Cierre -->
+        <span onclick="this.parentElement.style.display='none'" class="cerrarimg">&times;</span>
+
+        <!-- Imagen -->
+        <img class="expandirimg" style="width: 100%" src="#" alt="expandir">
+
+        <!-- Texto-->
+        <div class="imgtext"></div>
+    </div>
+
+    <!-- Formulario-->
+    <h2>Registrate y agenda una cita para una explicacion mas detallada</h2>
+    <div class="formularioRegistro">
+    <a href="./Formulario.html">Registrarce</a>
+</div>
+
+    <script>
+        function myFunction() {
+            let imgs = ['../img/REevil.jpg', '../img/Evgeniy.jpg', '../img/Bureau.jpg', '../img/Fancy.jpg'];
+
+            // Get the expanded image
+            var expandImg = document.getElementsByClassName("expandirimg");
+            // Get the image text
+            var imgText = document.getElementsByClassName("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs[1];
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+    </body>
+        <footer class="footer-distribucion">
+        <div class="footer-izquierda">
+          <h3>Elaborado por:</h3> 
+          <h2>Pianda Vargas</h2>
+          <h2>Marcillo Belén</h2>
+          <h2>Desiderio Emily</h2>
+          
+            <p class="footer-enlaces"> 
+            <a href="">Facebook</a>
+            <a href="">Youtube</a>
+            <a href="">Blogs</a>
+            <a href="">Twiter</a>
+        </p>
+        <p class="footer-nombre"><strong>Copyright© 2022 3ro Informática "D"<br>Todos los Derechos Reservados</strong></p>
+        </div>
+            
+            <div class="footer-centro">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Ecuador-Guayas</span>
+                        Guayaquil</p>
+                </div>
+    
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+593 80069565</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">Desiderio_Emily123@gmail.com</a></p>
+                    
+                </div>
+            </div>
+
+            <div class="footer-derecha">
+                <p class="footer-nombre-informacion">
+                    <h3>Informacion de Nuestra Pagina Web</h3>
+                    Nosotros Desarollamos esta Pagina informativa para los docentes de la Unidad Dolores Sucre Con la finalidad de mostrar
+                    los ataques Cyberneticos que existen como los niveles y como prevenir con los niveles se seguridad que existen.
+                </p>
+
+                <div class="footer-iconos">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>   
+         </footer>
+    
+</html>

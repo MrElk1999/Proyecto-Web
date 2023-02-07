@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+* {
+    box-sizing: border-box;
+    color: #fbfafc;
+    padding: 0;
+    margin: 0px;
+}
+
+body{
+	font-family:'calibri';
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+	background: #308ec4;
+    align-items: center;
+    padding: 2px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a{
+	font-weight: 600px;
+    padding-right: 10px;
+}
+
+nav a :hover{
+	color: #000000;
+}
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+
+.footer-distribucion {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distribucion .footer-izquierda, .footer-distribucion .footer-centro, .footer-distribucion .footer-derecha {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer Izquierda */
+
+.footer-distribucion .footer-izquierda {
+    width: 30%;
+}
+
+.footer-distribucion h3 {
+    color: #020202;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distribucion h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer Enlaces */
+
+.footer-distribucion .footer-enlaces {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distribucion .footer-enlaces a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distribucion .footer-nombre {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Centro */
+
+.footer-distribucion .footer-centro {
+    width: 35%;
+}
+
+.footer-distribucion .footer-centro i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distribucion .footer-centro i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distribucion .footer-centro p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distribucion .footer-centro p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distribucion .footer-centro p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Derecha */
+
+.footer-distribucion .footer-derecha {
+    width: 30%;
+}
+
+.footer-distribucion .footer-nombre-informacion {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distribucion .footer-nombre-informacion span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distribucion .footer-iconos {
+    margin-top: 25px;
+}
+
+.footer-distribucion .footer-iconos a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ff0000;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distribucion .footer-iconos a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-enlaces a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distribucion .footer-izquierda, .footer-distribucion .footer-centro, .footer-distribucion .footer-derecha {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distribucion .footer-centro i {
+        margin-left: 0;
+    }
+}       
+        
+/* Card de Tarjetas */
+
+#contendor {
+    width: 100%;
+    margin: 0px;
+    background: rgb(5, 5, 5);
+    align-items: center;
+    background:  rgba(0, 247, 226, 0.979);
+    box-shadow: 0 1rem 6rem rgb(0, 255, 234);
+}
+
+#contenido {
+    border: 1px solid #000000;
+    margin-top: 9px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+#contenido img {
+    height: 300px;
+    width: 360px;
+    box-shadow: 1px 1px 1px 1px #000;
+    background:  rgba(0, 247, 226, 0.979);
+    box-shadow: 0 1rem 6rem rgb(0, 255, 234);
+
+}
+
+#contenido #parrafo {
+    text-align: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+#titulos {
+    text-align: center;
+}
+
+  .artic1 {
+    min-height: 4px;
+    min-width: 105px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+
+.artic1:nth-child(2) {
+    width: 30%;
+    text-align: center;
+}
+
+.artic1:nth-child(2) img {
+    box-shadow: 1px 1px 1px 1px #000;
+    position: relative;
+    bottom: 26px;
+}
+
+.artic2 {
+    display: inline;
+    min-height: 10px;
+    min-width: 105px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+    font-family: Century Schoolbook;
+    text-align: center;
+}
+
+.artic2 p {
+    text-align: center;
+}
+
+.artic3 {
+    display: inline-block;
+    font-size: 16px;
+    min-width: 105px;
+    color: black;
+    font-family: Century Schoolbook;
+    text-align: center;
+    box-shadow: 0 1rem 6rem rgb(0, 255, 234);
+
+}
+
+.artic3:nth-child(2) {
+    display: inline-block;
+    font-size: 16px;
+    min-width: 105px;
+    color: black;
+    font-family: Century Schoolbook;
+    text-align: center;
+    box-shadow: 0 1rem 6rem rgb(0, 255, 234);
+}
+
+#Aside1 {
+    text-align: center;
+    min-width: 105px;
+}
+
+#H1 img {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    right: 5px;
+    top: 25px;
+}
+
+.tit {
+    padding: 10px;
+    background: #54595F;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.tit:hover {
+    background: grey;
+}
+
+.artic1 h4{
+    font-size: 18px;
+    color: black;
+    font-family: Century Schoolbook;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(248, 248, 248);
+    font-family: Century Schoolbook;
+    text-align: left;
+    text-align: justify;
+    padding: 5px;
+}

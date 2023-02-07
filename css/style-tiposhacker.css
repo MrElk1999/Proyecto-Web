@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+* {
+    box-sizing: border-box;
+    color: #fbfafc;
+    padding: 0;
+    margin: 0px;
+}
+
+body{
+	font-family:'calibri';
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+	background: #308ec4;
+    align-items: center;
+    padding: 2px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a{
+	font-weight: 600px;
+    padding-right: 10px;
+}
+
+nav a :hover{
+	color: #fcfcfc;
+}
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+
+.footer-distribucion {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distribucion .footer-izquierda, .footer-distribucion .footer-centro, .footer-distribucion .footer-derecha {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer Izquierda */
+
+.footer-distribucion .footer-izquierda {
+    width: 30%;
+}
+
+.footer-distribucion h3 {
+    color: #020202;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distribucion h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer Enlaces */
+
+.footer-distribucion .footer-enlaces {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distribucion .footer-enlaces a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distribucion .footer-nombre {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Centro */
+
+.footer-distribucion .footer-centro {
+    width: 35%;
+}
+
+.footer-distribucion .footer-centro i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distribucion .footer-centro i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distribucion .footer-centro p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distribucion .footer-centro p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distribucion .footer-centro p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Derecha */
+
+.footer-distribucion .footer-derecha {
+    width: 30%;
+}
+
+.footer-distribucion .footer-nombre-informacion {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distribucion .footer-nombre-informacion span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distribucion .footer-iconos {
+    margin-top: 25px;
+}
+
+.footer-distribucion .footer-iconos a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ff0000;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distribucion .footer-iconos a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-enlaces a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distribucion .footer-izquierda, .footer-distribucion .footer-centro, .footer-distribucion .footer-derecha {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distribucion .footer-centro i {
+        margin-left: 0;
+    }
+}       
+        
+/*Seccion Galeria*/
+
+.titulo {
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imagenes {
+    height: 30rem;
+    display: flex;
+}
+
+.img-1 {
+    background-image: url(../img/REevil.jpg);
+}
+
+.img-2 {
+    background-image: url(../img/Evgeniy.jpg);
+}
+
+.img-3 {
+    background-image: url(../img/Bureau.jpg);
+}
+
+.img-4 {
+    background-image: url(../img/Fancy.jpg);
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    flex-basis: 25%;
+    display: flex;
+    background-size: cover;
+    /* width: 100%; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4:hover {
+    opacity: 1;
+}
+
+.link {
+    background-color: #cec9c990;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    height: 25rem;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.contenedor {
+    position: relative;
+    display: none;
+}
+
+.imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 50px;
+}
+
+.cerrarimg {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+
+/*Boton Formulario*/
+
+.testimonios {
+    display: inline-block;
+    border-radius: 20px;
+    padding-top: 20px;
+    width: 60%;
+    color: black;
+    font-weight: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.testimonios article {
+    padding: 40px 65px 0px 65px;
+    background: #f4f4f4;
+    height: 10%;
+    border-radius: 40px;
+}
+
+.testimonios img {
+    display: block;
+    margin: auto;
+}
+
+/*Formulario*/
+
+.fuente {
+    font-size: 15px;
+    font-family: verdana;
+}
+
+.contenido {
+    color: #333333;
+}
+
+.row {
+    padding: 5px;
+}
+
+.MensajeError {
+    color: red;
+    font-size: 11px;
+}
+
+h2{
+    text-align: center;
+}
+
+.formularioRegistro a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    background-color: #00fff2;
+    box-shadow: 0 1rem 6rem rgb(0, 255, 234);
+    height: 10vh;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin: 10;
+    padding: 10;
+    margin-top: 40px;
+    width: auto;
+}
+
+.formularioRegistro a :hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgb(0, 0, 0);
+}
